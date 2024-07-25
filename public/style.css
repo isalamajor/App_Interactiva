@@ -1,0 +1,283 @@
+html, body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+/* Para eliminar el scroll cuando se abra el menú de hamburguesa */
+body.no-scroll {
+    overflow: hidden;
+}
+
+h1, h2 {
+    text-align: center;
+    color: #333;
+    margin: 30px 60px;
+}
+
+#ordenar-por-nombre, #ordenar-por-precio {
+    margin: 10px; /* Adjust as needed */
+}
+
+div {
+    display: flex;
+    justify-content: center;
+}
+
+
+#productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.producto {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 20px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+    display: flex; /* Agregado */
+    flex-direction: column; /* Agregado */
+    align-items: center; /* Agregado */
+}
+
+.producto img {
+    max-width: 100%; /* Agregado */
+    height: auto; /* Agregado */
+    border-radius: 10px; /* Agregado */
+    margin-bottom: 10px; /* Agregado */
+}
+
+.producto input[type="number"] {
+    width: 50px;
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.producto button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.producto button:hover {
+    background-color: #45a049;
+}
+
+#burger-button {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 100;
+    height: 50px;
+    width: 50px;
+}
+
+
+#menu-carrito {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: felx-start;
+    justify-content: flex-start;
+    top: 0;
+    right: -100%; /* Width of the menu */
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    padding: 20px;
+    transition: right 0.3s;
+    overflow-y: scroll;
+    box-shadow: -5px 0px 10px 0px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+#menu-carrito.open {
+    right: 0;
+}
+
+#carrito {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    flex-grow: 1;
+    overflow-y: auto;
+    align-items: center;
+}
+
+#total-carrito {
+    margin-top: auto;
+}
+
+#carrito li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+#carrito .eliminar {
+    background-color: #f44336;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    float: right;
+    font-size: 14px;
+    transition: background-color 0.3s;
+    margin: 10px;
+}
+
+#carrito .total, #carrito .name {
+    margin: 10px;
+}
+
+#carrito .eliminar:hover {
+    background-color: #da190b;
+}
+
+.producto img {
+    width: 100px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+}
+
+.corazon-blanco {
+    fill: none;
+    stroke: black;
+}
+
+.corazon-rojo {
+    fill: red;
+    stroke: none;
+}
+
+
+/* Estilos para los botones de ordenar */
+#botones-ordenar {
+    margin: 20px;
+    text-align: center;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+}
+
+#botones-ordenar button {
+    margin: 10px; /* Agrega margen entre los botones */
+    padding: 12px 24px;
+    font-size: 12px;
+    background-color: #4CAF50; /* Verde */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilos para el total del carrito */
+#total-carrito {
+    font-size: 40px;
+    font-weight: bold;
+    color: #ff4d4d; /* rojo */
+}
+
+
+/* Estilos para el contenedor del botón */
+#contenedor-botones {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+#voz-btn {
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    font-size: 12px;
+    background-color: #1b5e20; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin: 5px;
+}
+
+#voz-btn img {
+    width: 30px; /* Tamaño de la imagen */
+    height: 30px;
+}
+
+#voz-btn:hover {
+    background-color: #0a3411; /* Cambia el color al pasar el ratón */
+}
+
+#leer-pedido-btn {
+    width: 50px; /* Ancho del botón */
+    height: 50px; /* Altura del botón */
+    font-size: 12px;
+    background-color: #ff9800; /* Verde oscuro */
+    color: white;
+    border: none;
+    border-radius: 50%; /* Hace que el botón sea redondo */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex; /* Usamos flexbox */
+    justify-content: center; /* Centramos horizontalmente */
+    align-items: center; /* Centramos verticalmente */
+    margin: 5px;
+}
+
+#leer-pedido-btn img {
+    width: 30px; /* Tamaño de la imagen */
+    height: 30px;
+}
+
+#leer-pedido-btn:hover {
+    background-color: #f57c00; /* Cambia el color al pasar el ratón */
+}
+
+#siguiente-btn {
+    position: fixed;
+    bottom: 15px;
+    right: 20px;
+    padding: 15px 30px; /* Ajusta el tamaño del botón */
+    background-color: #8a2be2; /* Cambia el color morado */
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px; /* Ajusta el tamaño de la fuente */
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+    z-index: 100;
+}
+
+#siguiente-btn:hover {
+    background-color: #9370db; /* Cambia el color al pasar el mouse */
+}

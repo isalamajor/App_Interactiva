@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compra</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="titulo">Carrito</h1>
+    <div id="botones-ordenar">
+        <button id="ordenar-por-nombre">Ordenar por nombre</button>
+        <button id="ordenar-por-precio">Ordenar por precio</button>
+    </div>
+    <div id="contenedor-botones">
+        <button id="voz-btn">
+            <img src="imagenes/microfono.png" alt="Micrófono">
+        </button>
+
+        <button id="leer-pedido-btn">
+            <img src="imagenes/altavoz.png" alt="Altavoz">
+        </button>
+    </div>
+    
+    <div id="productos">
+        <div class="producto" data-nombre="Manzana" data-precio="1">
+            <img src="imagenes/manzana.jpg" alt="Manzana">
+            Manzana - $1 <input type="number" value="1" min="1">
+            <button class="favorito-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="producto" data-nombre="Plátano" data-precio="2">
+            <img src="imagenes/platano.jpg" alt="Plátano">
+            Plátano - $2 <input type="number" value="1" min="1">
+            <button class="favorito-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="producto" data-nombre="Pera" data-precio="2">
+            <img src="imagenes/pera.jpg" alt="Pera">
+            Pera - $2 <input type="number" value="1" min="1">
+            <button class="favorito-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="producto" data-nombre="Naranja" data-precio="1">
+            <img src="imagenes/naranja.jpg" alt="Naranja">
+            Naranja - $1 <input type="number" value="1" min="1">
+            <button class="favorito-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        </div>
+        <div class="producto" data-nombre="Pizza" data-precio="4">
+            <img src="imagenes/pizza.jpg" alt="Pizza">
+            Pizza - 4€ <input type="number" value="1" min="1">
+            <button class="favorito-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="producto" data-nombre="Agua" data-precio="0.3">
+            <img src="imagenes/agua.jpg" alt="Agua">
+            Agua - 0.3€ <input type="number" value="1" min="1">
+            <button class="favorito-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+        <div class="producto" data-nombre="Galletas" data-precio="1">
+            <img src="imagenes/galletas.jpg" alt="Galletas">
+            Galletas - 1€ <input type="number" value="1" min="1">
+            <button class="favorito-btn">
+                <svg viewBox="0 0 24 24" width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+            </button>
+        </div>
+    <button id="siguiente-btn" class="boton-siguiente">PAGAR</button>
+
+    </div>
+    <button id="burger-button">&#9776;</button>
+    <div id="menu-carrito">
+        <ul id="carrito"></ul>
+        <p id="total-carrito">Total: <span>0€</span></p>
+    </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/written-number@1.0.6/written-number.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
